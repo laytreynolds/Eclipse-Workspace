@@ -1,0 +1,22 @@
+package directions;
+
+public class Runner {
+
+	public static void main(String[] args) {
+	
+		
+		for (Directions directions : Directions.values()){
+			
+			System.out.println("The motion of " + directions + " is " + directions.motion());
+		}
+		
+		System.out.println("=".repeat(30));
+	
+	
+	for (Directions directions : Directions.values()){
+		
+		System.out.println(directions.abrevmotion());
+	}
+}
+
+}

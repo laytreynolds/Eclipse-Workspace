@@ -1,0 +1,6 @@
+package GarageExercise;
+
+public class Garage {
+	
+	private list<Vehicle> vehicles = new ArrayList<Vehicle>();
+}

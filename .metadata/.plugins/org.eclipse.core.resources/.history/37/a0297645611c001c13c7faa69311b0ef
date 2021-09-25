@@ -1,0 +1,16 @@
+package singleresponsibility;
+
+public class Driver extends Car {
+
+	private int mileage;
+	
+    public Driver(String colour, String model, int mileage) {
+		super(colour, model, mileage);
+	}
+
+
+    // functionality
+    public void drive(String milesDriven){
+        this.setMileage(this.getMileage() + milesDriven);
+    }
+}

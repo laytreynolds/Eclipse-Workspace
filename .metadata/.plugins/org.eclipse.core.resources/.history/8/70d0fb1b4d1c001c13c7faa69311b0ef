@@ -1,0 +1,19 @@
+package directions;
+
+public enum Directions {
+
+	NORTH(Forward, N),
+	SOUTH(Backward, S),
+	EAST(Left, E),
+	WEST(Right, W);
+	
+	private final String motion;
+	private final String abrev;
+
+	
+	Directions(String motion, String abrev) {
+		this.motion = motion;
+		this.abrev = abrev;
+		
+	}
+}

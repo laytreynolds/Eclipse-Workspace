@@ -1,0 +1,8 @@
+	public Person(String name, int age, double shoesize, String job, double height) {
+		
+		this.name = name;
+		this.age = age;
+		this.shoesize = shoesize;
+		this.job = job;
+		this.height = height;
+		

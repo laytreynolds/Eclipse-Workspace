@@ -1,0 +1,20 @@
+package singleresponsibility;
+
+public class Mechanic {
+	
+	private String modify;
+	private int id;
+
+	public void ArrayList(String) mods = new ArrayList<>();
+	
+	public Mechanic(String modify, int id) {
+		super();
+		this.modify = modify;
+		this.id = id;
+	}
+	
+
+	
+	
+
+}

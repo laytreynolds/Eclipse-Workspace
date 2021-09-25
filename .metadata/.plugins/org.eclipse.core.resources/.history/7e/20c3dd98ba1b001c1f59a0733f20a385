@@ -1,0 +1,10 @@
+package hashsets;
+
+public class HashSets {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

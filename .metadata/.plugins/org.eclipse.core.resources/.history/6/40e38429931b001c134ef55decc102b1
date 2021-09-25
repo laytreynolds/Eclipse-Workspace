@@ -1,0 +1,46 @@
+package trycatchexceptions;
+
+import java.util.Scanner;
+
+import java.io.IOException;
+
+public class CalculatorScanner {
+
+	public static double result;
+
+	
+
+	public static double add(double firstNumber, double secondNumber) {
+
+		result = firstNumber + secondNumber;
+
+		return result;
+	}
+
+	public static double sub(double firstNumber, double secondNumber) {
+
+		result = firstNumber - secondNumber;
+
+		return result;
+	}
+
+	public static double mul(double firstNumber, double secondNumber) {
+
+		result = firstNumber * secondNumber;
+		return result;
+	}
+
+	public static double div(int int1, int int2) throws ArithmeticException{
+		
+		try {
+			result = int1 / int2;
+		}
+		catch (ArithmeticException e) {
+			System.out.println("Can't be divided by 0, The message:" + e);
+		}
+		
+		return result;
+
+	}
+	
+}

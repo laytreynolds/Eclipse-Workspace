@@ -1,0 +1,23 @@
+package singleresponsibility;
+
+import java.util.ArrayList;
+import java.util.List;
+private String modify;
+
+public class Mechanic {
+	
+	
+	List<String> mods = new ArrayList<>();
+	
+	mods.add("spoiler");
+	
+	public Mechanic(String modify) {
+		super();
+		this.modify = modify;
+		
+	}
+	
+	
+	
+
+}

@@ -1,0 +1,49 @@
+package trycatchexceptions;
+
+import java.util.Scanner;
+
+import java.io.IOException;
+
+public class CalculatorScanner {
+
+	public static double result;
+
+	
+
+	public static double add(double firstNumber, double secondNumber) {
+
+		result = firstNumber + secondNumber;
+
+		return result;
+	}
+
+	public static double sub(double firstNumber, double secondNumber) {
+
+		result = firstNumber - secondNumber;
+
+		return result;
+	}
+
+	public static double mul(double firstNumber, double secondNumber) {
+
+		result = firstNumber * secondNumber;
+		return result;
+	}
+
+	public static double div(double num1, double num2) throws ArithmeticException {
+		
+		result = num1/num2;
+		
+		try { 
+			return result;
+			
+		} catch (ArithmeticException e) {
+			return 0;
+			
+		}
+
+	
+
+		}
+
+	}

@@ -1,0 +1,15 @@
+package directions;
+
+public class Runner {
+
+	public static void main(String[] args) {
+	
+		String motion = Directions.NORTH.motion();
+		
+		for (Directions d : Directions.values()){
+			
+			System.out.println("The motion of " + d + "is " + motion);
+		}
+	}
+
+}

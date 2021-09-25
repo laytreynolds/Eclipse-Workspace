@@ -1,0 +1,15 @@
+package directions;
+
+public enum Directions {
+
+	NORTH(Foward, N),
+	SOUTH(Backward, S),
+	EAST(Left, E),
+	WEST(Right, W),
+	
+	private final int motion;
+	private final int abrev;
+
+	
+	Direction(String motion, String abrev)
+}

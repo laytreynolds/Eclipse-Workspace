@@ -1,0 +1,72 @@
+package come.qa.example;
+
+import org.junit.AfterClass;
+import org.junit.Before;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.After;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.qa.example.Temperature;
+
+public class TemperatureTest {
+	
+	Temperature tc;
+	
+	@BeforeClass
+	public static void setup() {
+		System.out.println("Setup");
+	}
+
+	@Before
+	public void init() {
+		System.out.println("Before test");
+	}
+	
+	@Test 	
+	public void fahrenheit() {
+		
+		assertEquals(15.556, tc.convertFahrenheitToCelsius(60), 0.001);
+	}
+	@Test 	
+	public void Celcius() {
+		
+//		assertEquals(32.000, tc.convertCelsiusToFahrenheit(0), 0.001);
+//	}
+//	@Test 	
+//	public void fahrenheit() {
+//		
+//		assertEquals(15.556, tc.convertFahrenheitToCelsius(60), 0.001);
+//	}
+//	@Test 	
+//	public void fahrenheit() {
+//		
+//		assertEquals(15.556, tc.convertFahrenheitToCelsius(60), 0.001);
+//	}
+//	@Test 	
+//	public void fahrenheit() {
+//		
+//		assertEquals(15.556, tc.convertFahrenheitToCelsius(60), 0.001);
+//	}
+//	
+	
+	@After
+	public void after() {
+		System.out.println("After test");
+	}
+	
+	
+	
+	@AfterClass
+	public static void teardown() {
+	System.out.println("End of tests");
+	}
+
+
+}
+
+
+
+

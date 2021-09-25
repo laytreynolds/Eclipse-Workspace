@@ -1,0 +1,27 @@
+package hashsets;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashSets {
+
+	public static void main(String[] args) {
+
+//		instantiate hash 
+		Set<String> hashSet = new HashSet<>();
+		
+//		add values to hash set
+		
+		hashSet.add("A");
+		hashSet.add("B");
+		hashSet.add("C");
+		hashSet.add("E");
+		hashSet.add("D");
+		hashSet.add("F");
+		hashSet.add("F"); // this will overwite the previous "F", as duplicate values are not permitted
+		System.out.println(hashSet);
+	
+
+	}
+
+}

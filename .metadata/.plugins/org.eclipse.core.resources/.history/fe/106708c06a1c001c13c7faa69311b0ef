@@ -1,0 +1,23 @@
+package singleresponsibility;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Mechanic extends Car {
+	
+	private String modify;
+	
+	public ArrayList<String> mods = new ArrayList<>();
+	
+	public Mechanic(String modify) {
+		super(modify, modify, mileage);
+		this.modify = modify;
+		
+	}
+	
+	
+
+	
+	
+
+}
