@@ -3,31 +3,45 @@ package com.qa.animalproject;
 public class AnimalDTO {
 
 	private long id;
-	private String firstname;
-	private String lastname;
-
+	public String firstName;
+	public String lastName;
+	public int jumpheight;
+	
+	public AnimalDTO(Animal a) {
+		this.id = a.getId();
+		this.firstName = a.getfirstName();
+		this.lastName = a.getlastName();
+		this.jumpheight	= a.getJumpheight();
+	}
+	
 	public long getId() {
 		return id;
 	}
-
 	public void setId(long id) {
 		this.id = id;
 	}
-
-	public String getFirstname() {
-		return firstname;
+	public String getFirstName() {
+		return firstName;
 	}
-
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-
-	public String getLastname() {
-		return lastname;
+	public String getLastName() {
+		return lastName;
 	}
-
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
-
+	public int getJumpheight() {
+		return jumpheight;
+	}
+	public void setJumpheight(int jumpheight) {
+		this.jumpheight = jumpheight;
+	}
+	
+	
+	
+	
+	
+	
 }
