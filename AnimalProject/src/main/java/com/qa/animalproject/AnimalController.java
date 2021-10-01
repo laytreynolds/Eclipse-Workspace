@@ -65,7 +65,7 @@ public class AnimalController {
 //Update
 	@PutMapping("/update/{id}")
 	public ResponseEntity<Animal> update(@PathVariable long id, @RequestBody Animal a) {
-		return new ResponseEntity<Animal>(this.service.update(a, id), HttpStatus.ACCEPTED);
+		return new ResponseEntity<Animal>(this.service.update(id, a), HttpStatus.ACCEPTED);
 
 	}
 

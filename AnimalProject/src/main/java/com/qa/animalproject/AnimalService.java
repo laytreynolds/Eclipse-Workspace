@@ -2,6 +2,7 @@ package com.qa.animalproject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,14 +70,29 @@ public class AnimalService {
 		return this.repo.findById(id).get();
 	}
 
-//update 
-	public Animal update(Animal a, long id) {
-		Animal exists = this.repo.findById(id).orElseThrow(AnimalNotFoundException::new);
-		exists.setfirstName(a.getfirstName());
-		exists.setfirstName(a.getfirstName());
-		return this.repo.saveAndFlush(exists);
+//update
+	public Animal update(Long id, Animal newAnimal) {
+        Optional<Animal> existingOptional = this.repo.findById(id);
+        Animal existing = existingOptional.get();
 
-	}
+        existing.setfirstName(newAnimal.getfirstName());
+        existing.setlastName(newAnimal.getlastName());
+        existing.setJumpheight(newAnimal.getJumpheight());
+
+        return this.repo.save(existing);
+    }
+	
+	
+	
+	
+	
+	
+//	public Animal update(Animal a, long id) {
+//		Animal exists = this.repo.findById(id).orElseThrow(AnimalNotFoundException::new);
+//		exists.setfirstName(a.getfirstName());
+//		return this.repo.saveAndFlush(exists);
+//
+//	}
 
 //delete
 	public boolean delete(long id) {

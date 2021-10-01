@@ -91,7 +91,7 @@ public class Animal {
 
 	@Override
 	public String toString() {
-		return "Animal [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", type=" + type
+		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", type=" + type
 				+ ", jumpheight=" + jumpheight + "]";
 	}
 
@@ -108,7 +108,7 @@ public class Animal {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Animal other = (Animal) obj;
+	Animal other = (Animal) obj;
 		return Objects.equals(firstName, other.firstName) && id == other.id && jumpheight == other.jumpheight
 				&& Objects.equals(lastName, other.lastName) && Objects.equals(type, other.type);
 	}
